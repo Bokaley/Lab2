@@ -6,10 +6,10 @@
 ## Инструкции по запуску
 
 ### 1. Клонирование репозитория
-bash git clone вашегорепозитория> cd <названиепапкипроекта>
+git clone вашегорепозитория> cd <названиепапкипроекта>
 
 ### 2. Создание и активация виртуального окружения (рекомендуется)
-bash python -m venv venv
+python -m venv venv
 
 Для Windows:
 .\venv\Scripts\activate
@@ -18,36 +18,35 @@ bash python -m venv venv
 source venv/bin/activate
 
 ### 3. Установка зависимостей
-bash pip install -r requirements.txt
+pip install -r requirements.txt
 
 ### 4. Запуск основной программы
-bash python main.py
+python main.py
 
 Программа запросит у вас ввод параметров (тариф, период, характеристики приборов) и выведет результаты.
 
 ### 5. Запуск тестов
 Для запуска тестов с использованием `pytest` убедитесь, что `pytest` установлен (`pip install pytest`). Затем выполните в корне проекта:
-bash pytest
+pytest
 
 ### 6. Запуск через Docker
 Убедитесь, что Docker установлен на вашей системе.
-bash
 
-## Архитектура
-your_project_root/
-├── appliance_calculator/
-│   ├── __init__.py
-│   ├── appliances.py
-│   ├── calculator.py
-│   ├── reporting.py
-│   └── database.py
-├── main.py
-├── README.md
-├── requirements.txt
-├── Dockerfile
-└── tests/
-    ├── __init__.py
-    ├── test_appliances.py
-    ├── test_calculator.py
-    ├── test_reporting.py
-    └── test_database.py
+## Структура проекта
+Appliances_project/<br>
+├── appliance_calculator/<br>
+│   ├── __init__.py<br>
+│   ├── appliances.py<br>
+│   ├── calculator.py<br>
+│   ├── reporting.py<br>
+│   └── database.py<br>
+├── main.py<br>
+├── README.md<br>
+├── requirements.txt<br>
+├── Dockerfile<br>
+└── tests/<br>
+    ├── __init__.py<br>
+    ├── test_appliances.py<br>
+    ├── test_calculator.py<br>
+    ├── test_reporting.py<br>
+    └── test_database.py<br>
